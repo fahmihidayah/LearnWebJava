@@ -12,6 +12,10 @@
         <servlet-name>RedirectServlet</servlet-name>
         <servlet-class>com.fahmi.learn.java.controllers.RedirectServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ParameterController</servlet-name>
+        <servlet-class>com.fahmi.learn.java.controllers.ParameterController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>MahasiswaController</servlet-name>
         <url-pattern>/mahasiswa/InsertMahasiswa</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>RedirectServlet</servlet-name>
         <url-pattern>/RedirectServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ParameterController</servlet-name>
+        <url-pattern>/ParameterController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
