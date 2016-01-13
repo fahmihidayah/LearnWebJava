@@ -33,7 +33,8 @@ public class ParameterController extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             out.println("your header is " + request.getHeader("auth"));
-            
+            out.println("<br>If you have question please contact admin email : <br>");
+            out.println(getServletConfig().getInitParameter("adminEmail"));
         }
     }
     

@@ -15,6 +15,11 @@
     <servlet>
         <servlet-name>ParameterController</servlet-name>
         <servlet-class>com.fahmi.learn.java.controllers.ParameterController</servlet-class>
+        <init-param>
+            <description>this is admin email</description>
+            <param-name>adminEmail</param-name>
+            <param-value>fahmi.hidayah.cs@gmail.com</param-value>
+        </init-param>
     </servlet>
     <servlet-mapping>
         <servlet-name>MahasiswaController</servlet-name>
