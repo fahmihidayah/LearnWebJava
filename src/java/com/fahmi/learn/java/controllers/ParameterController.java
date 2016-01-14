@@ -35,6 +35,7 @@ public class ParameterController extends HttpServlet {
             out.println("your header is " + request.getHeader("auth"));
             out.println("<br>If you have question please contact admin email : <br>");
             out.println(getServletConfig().getInitParameter("adminEmail"));
+            out.println(" and this is global variable for email " + getServletContext().getInitParameter("globalEmail"));
         }
     }
     

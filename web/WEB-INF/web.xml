@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <context-param>
+        <param-name>globalEmail</param-name>
+        <param-value>vambex.system@gmail.com</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dogName</param-name>
+        <param-value>Dog Master</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dogBreedType</param-name>
+        <param-value>Breed Pirate</param-value>
+    </context-param>
+    <listener>
+        <listener-class>
+            com.fahmi.learn.java.listener.MyAppListener
+        </listener-class>
+    </listener>
     <servlet>
         <servlet-name>MahasiswaController</servlet-name>
         <servlet-class>com.fahmi.learn.java.controllers.MahasiswaController</servlet-class>
@@ -21,6 +38,10 @@
             <param-value>fahmi.hidayah.cs@gmail.com</param-value>
         </init-param>
     </servlet>
+    <servlet>
+        <servlet-name>DogTestServlet</servlet-name>
+        <servlet-class>com.fahmi.learn.java.controllers.DogTestServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>MahasiswaController</servlet-name>
         <url-pattern>/mahasiswa/InsertMahasiswa</url-pattern>
@@ -36,6 +57,10 @@
     <servlet-mapping>
         <servlet-name>ParameterController</servlet-name>
         <url-pattern>/ParameterController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DogTestServlet</servlet-name>
+        <url-pattern>/DogTestServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
